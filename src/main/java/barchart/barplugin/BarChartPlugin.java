@@ -8,6 +8,7 @@ import org.knowm.xchart.CategoryChartBuilder;
 import org.knowm.xchart.demo.charts.ExampleChart;
 import org.knowm.xchart.style.Styler;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class BarChartPlugin implements ExampleChart<CategoryChart> {
@@ -40,9 +41,7 @@ public class BarChartPlugin implements ExampleChart<CategoryChart> {
         chart.getStyler().setHasAnnotations(true);
 
         // Series
-        chart.addSeries("Member", memCount);
-        chart.addSeries("VIP", VIPCount);
-        chart.addSeries("Customer", custCount);
+        chart.addSeries("test 1", Arrays.asList(new String[] { "Member", "VIP", "Customer"}), Arrays.asList(new Integer[] { memCount, VIPCount, custCount }));
         chart.setTitle("Persentase Transaksi berdasarkan Jenis Customer");
 
         return chart;

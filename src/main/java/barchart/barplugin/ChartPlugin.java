@@ -12,6 +12,6 @@ public class ChartPlugin implements ChartPluginInterface {
     @Override
     public JPanel loadPanel(MainController mainController) {
         List<FixedBill> temp = mainController.getFixedBillDataIO().getAll();
-        return new XChartPanel<>(new PieChartPlugin(temp).getChart());
+        return new XChartPanel<>(new BarChartPlugin(temp).getChart());
     }
 }
