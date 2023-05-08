@@ -34,7 +34,7 @@ public class BarChartPlugin implements ExampleChart<CategoryChart> {
         }
 
         // Create Chart
-        CategoryChart chart = new CategoryChartBuilder().width(800).height(600).title("Persentase Transaksi berdasarkan Jenis Customer").xAxisTitle("Jenis").yAxisTitle("Jumlah").build();
+        CategoryChart chart = new CategoryChartBuilder().width(400).height(500).title("Persentase Transaksi berdasarkan Jenis Customer").xAxisTitle("Jenis").yAxisTitle("Jumlah").build();
 
         // Customize Chart
         chart.getStyler().setLegendPosition(Styler.LegendPosition.InsideNW);
