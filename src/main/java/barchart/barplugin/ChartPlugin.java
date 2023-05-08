@@ -20,7 +20,7 @@ public class ChartPlugin implements ChartPluginInterface {
 //        List<ExampleChart> charts = new ArrayList<ExampleChart>();
 //        charts.add();
         sidePanel.add(new XChartPanel<>(new BarChartPlugin(temp).getChart()));
-        sidePanel.add(new XChartPanel<>(new LineChartPlugin().getChart()));
+        sidePanel.add(new XChartPanel<>(new LineChartPlugin(temp).getChart()));
         return sidePanel;
     }
 }
